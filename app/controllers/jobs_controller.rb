@@ -1,6 +1,11 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
 
+  # GET /jobs/next
+  def next
+    @job = Job.where(['dispatched IS NULL']).first
+  end
+
   # GET /jobs
   # GET /jobs.json
   def index
