@@ -8,4 +8,4 @@ App.realtime = App.cable.subscriptions.create "RealtimeChannel",
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
     #console.log("#{data.message}")
-    $('#job-table').html("#{data.message}")
+    $('#job-table').html("#{data.message}").hide().fadeIn(100)
