@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root to: 'jobs#index'
 
   get 'jobs/next', to: 'jobs#next'
 
