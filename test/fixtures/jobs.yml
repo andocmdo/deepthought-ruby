@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  worker_id: 1
+  job_valid: false
+  dispatched: 2018-07-22 11:39:45
+  completed: 2018-07-22 11:39:45
+  success: false
+  command: MyString
+  output: MyText
+
+two:
+  worker_id: 1
+  job_valid: false
+  dispatched: 2018-07-22 11:39:45
+  completed: 2018-07-22 11:39:45
+  success: false
+  command: MyString
+  output: MyText
