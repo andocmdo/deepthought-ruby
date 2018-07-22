@@ -21,6 +21,8 @@ gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 
+gem 'bootstrap'
+
 # added jquery
 gem 'jquery-rails'
 
