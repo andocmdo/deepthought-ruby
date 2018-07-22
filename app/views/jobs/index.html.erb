@@ -16,21 +16,8 @@
     </tr>
   </thead>
 
-  <tbody>
-    <% @jobs.each do |job| %>
-      <tr>
-        <td><%= job.worker_id %></td>
-        <td><%= job.job_valid %></td>
-        <td><%= job.dispatched %></td>
-        <td><%= job.completed %></td>
-        <td><%= job.success %></td>
-        <td><%= job.command %></td>
-        <td><%= job.output %></td>
-        <td><%= link_to 'Show', job %></td>
-        <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+  <tbody id="job-table">
+      <%= render @jobs %>
   </tbody>
 </table>
 
