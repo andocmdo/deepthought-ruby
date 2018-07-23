@@ -1,39 +1,51 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
 
-<p>
-  <strong>Worker:</strong>
-  <%= @job.worker_id %>
-</p>
 
-<p>
-  <strong>Job valid:</strong>
-  <%= @job.job_valid %>
-</p>
+      <!-- Place show code here -->
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Dispatched:</strong>
-  <%= @job.dispatched %>
-</p>
+      <p>
+        <strong>Worker:</strong>
+        <%= @job.worker_id %>
+      </p>
 
-<p>
-  <strong>Completed:</strong>
-  <%= @job.completed %>
-</p>
+      <p>
+        <strong>Job valid:</strong>
+        <%= @job.job_valid %>
+      </p>
 
-<p>
-  <strong>Success:</strong>
-  <%= @job.success %>
-</p>
+      <p>
+        <strong>Dispatched:</strong>
+        <%= @job.dispatched %>
+      </p>
 
-<p>
-  <strong>Command:</strong>
-  <%= @job.command %>
-</p>
+      <p>
+        <strong>Completed:</strong>
+        <%= @job.completed %>
+      </p>
 
-<p>
-  <strong>Output:</strong>
-  <%= @job.output %>
-</p>
+      <p>
+        <strong>Success:</strong>
+        <%= @job.success %>
+      </p>
 
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
+      <p>
+        <strong>Command:</strong>
+        <%= @job.command %>
+      </p>
+
+      <p>
+        <strong>Output:</strong>
+        <%= @job.output %>
+      </p>
+
+      <%= link_to 'Edit', edit_job_path(@job) %> |
+      <%= link_to 'Back', jobs_path %>
+
+      <!-- End show code -->
+
+    </div>
+  </div>
+</div>
